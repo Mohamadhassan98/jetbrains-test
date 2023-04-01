@@ -1,0 +1,120 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "@nuxtjs",
+    "prettier",
+    "@nuxtjs/eslint-config-typescript"
+  ],
+  "plugins": [
+    "prettier",
+    "vue-scoped-css"
+  ],
+  "settings": {
+    "import/ignore": [
+      "vue"
+    ]
+  },
+  "rules": {
+    "indent": 0,
+    "no-tabs": 1,
+    "arrow-parens": [
+      "error",
+      "as-needed",
+      {
+        "requireForBlockBody": false
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto",
+        "arrowParens": "avoid",
+        "singleQuote": true,
+        "semi": true,
+        "useTabs": false,
+        "trailingComma": "es5"
+      }
+    ],
+    "unicorn/number-literal-case": 0,
+    "vue/singleline-html-element-content-newline": 0,
+    "vue/html-self-closing": 0,
+    "vue/max-attributes-per-line": 0,
+    "keyword-spacing": 0,
+    "no-mixed-spaces-and-tabs": [
+      "warn",
+      "smart-tabs"
+    ],
+    "vue/html-indent": 0,
+    "vue/valid-v-slot": [
+      "error",
+      {
+        "allowModifiers": true
+      }
+    ],
+    "semi": "off",
+    "@typescript-eslint/semi": [
+      "error",
+      "always"
+    ],
+    "no-console": "warn",
+    "vue/no-v-html": "off",
+    "space-before-function-paren": 0,
+    "curly": [
+      "error",
+      "multi-line"
+    ],
+    "object-shorthand": "off",
+    "no-useless-constructor": "off",
+    "no-unused-vars": "off",
+    "prefer-const": [
+      "error",
+      {
+        "destructuring": "all"
+      }
+    ],
+    "no-mixed-operators": "off",
+    "no-use-before-define": "off",
+    "no-dupe-class-members": "off",
+    "@typescript-eslint/no-dupe-class-members": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-useless-constructor": "error",
+    "no-array-constructor": "off",
+    "no-throw-literal": "off",
+    "accessor-pairs": "off",
+    "no-misleading-character-class": "off",
+    "no-prototype-builtins": "off",
+    "import/order": "warn",
+    "func-call-spacing": "off",
+    "@typescript-eslint/func-call-spacing": "error",
+    "vue-scoped-css/no-parsing-error": "warn",
+    "vue-scoped-css/no-unused-keyframes": "warn",
+    "vue-scoped-css/no-unused-selector": "warn",
+    "vue-scoped-css/require-selector-used-inside": "warn",
+    "spaced-comment": [
+      "error",
+      "always",
+      {
+        "markers": [
+          "#region",
+          "#endregion",
+          "*"
+        ]
+      }
+    ],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "never",
+        "imports": "always-multiline",
+        "objects": "always-multiline"
+      }
+    ],
+    "vue/no-v-text-v-html-on-component": "off"
+  }
+}
